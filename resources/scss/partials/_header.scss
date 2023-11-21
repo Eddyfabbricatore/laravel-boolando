@@ -1,0 +1,30 @@
+header{
+    height: $h-header;
+    background-color: $bg-header;
+
+    .container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: $h-100;
+
+      ul{
+        li{
+            margin: 0 10px;
+
+            a:hover{
+                text-decoration: underline;
+            }
+
+            a,
+            i{
+              color: $color-link;
+            }
+        }
+      }
+
+      .logo{
+        width: $w-logo;
+      }
+    }
+}

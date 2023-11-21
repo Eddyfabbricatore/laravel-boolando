@@ -1,0 +1,89 @@
+.col{
+    flex-basis: $w-col;
+
+    .card{
+      margin-bottom: 40px;
+      padding: 0 10px;
+
+      .card-image{
+        position: relative;
+
+        .image{
+          height: $h-card-image;
+
+          .hide{
+            display: none;
+          }
+
+          &:hover{
+            img{
+              display: none;
+            }
+
+            img.hide{
+              display: block;
+            }
+          }
+        }
+
+        .heart{
+          position: absolute;
+          top: 10px;
+          right: 0;
+          padding: 10px;
+          background-color: $bg-body;
+
+          i{
+            color: $color-heart;
+          }
+
+          &:hover{
+            cursor: pointer;
+
+            i{
+              color: $bg-discount;
+            }
+          }
+        }
+
+        .card-badge{
+          position: absolute;
+          bottom: 30px;
+          left: 0;
+
+          .discount{
+            margin-right: 10px;
+            background-color: $bg-discount;
+          }
+
+          .sustainability{
+            text-transform: capitalize;
+            background-color: $bg-sustainability;
+          }
+
+          .discount,
+          .sustainability{
+            padding: 5px;
+            color: $color-link;
+          }
+        }
+      }
+
+      .card-text{
+        span{
+          text-transform: capitalize;
+        }
+
+        h3{
+          text-transform: uppercase;
+        }
+
+        .price{
+          span{
+            margin-right: 10px;
+            color: $bg-discount;
+          }
+        }
+      }
+    }
+}
